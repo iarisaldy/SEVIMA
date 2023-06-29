@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.8 on darwin)" generated="20230629 15:13:19.188" rpa="false" schemaversion="3">
+<suite id="s1" name="Putraprima" source="/Users/irfanarisaldy/Documents/Github/SEVIMA/SEVIMA/UIAutomationTest/putraprima.robot">
+<test id="s1-t1" name="Open Website https://qa.putraprima.id/ success" line="12">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:19.271" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:19.271" endtime="20230629 15:13:23.211"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:13:23.211" endtime="20230629 15:13:23.240"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:19.270" endtime="20230629 15:13:23.240"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:13:23.289" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:13:23.241" endtime="20230629 15:13:23.289"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:13:23.289" endtime="20230629 15:13:23.303"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:19.270" endtime="20230629 15:13:23.303"/>
+</test>
+<test id="s1-t2" name="Click Terms Of Service" line="17">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:23.307" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:23.306" endtime="20230629 15:13:27.293"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:13:27.293" endtime="20230629 15:13:27.310"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:23.305" endtime="20230629 15:13:27.310"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Terms Of Service</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:27.312" level="INFO">Clicking element 'link=Terms Of Service'.</msg>
+<status status="PASS" starttime="20230629 15:13:27.310" endtime="20230629 15:13:27.376"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:13:27.422" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:13:27.377" endtime="20230629 15:13:27.422"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:13:27.422" endtime="20230629 15:13:27.428"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:23.304" endtime="20230629 15:13:27.429"/>
+</test>
+<test id="s1-t3" name="Click Privacy Policy" line="23">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:27.431" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:27.431" endtime="20230629 15:13:32.483"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:13:32.483" endtime="20230629 15:13:32.499"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:27.430" endtime="20230629 15:13:32.500"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Privacy Policy</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:32.501" level="INFO">Clicking element 'link=Privacy Policy'.</msg>
+<status status="PASS" starttime="20230629 15:13:32.500" endtime="20230629 15:13:32.554"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:13:32.603" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:13:32.554" endtime="20230629 15:13:32.603"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:13:32.603" endtime="20230629 15:13:32.611"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:27.429" endtime="20230629 15:13:32.612"/>
+</test>
+<test id="s1-t4" name="Hitung faktorial empty string" line="29">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:32.615" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:32.614" endtime="20230629 15:13:37.037"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:13:37.037" endtime="20230629 15:13:37.053"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:32.613" endtime="20230629 15:13:37.054"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>${null}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:37.055" level="INFO">Clicking element 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:37.054" endtime="20230629 15:13:37.111"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:37.111" level="INFO">Typing text 'None' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:37.111" endtime="20230629 15:13:37.167"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:37.168" level="INFO">Clicking element 'id=hitung'.</msg>
+<status status="PASS" starttime="20230629 15:13:37.168" endtime="20230629 15:13:37.206"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230629 15:13:37.206" endtime="20230629 15:13:37.222"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:37.054" endtime="20230629 15:13:37.222"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:13:37.275" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:13:37.222" endtime="20230629 15:13:37.275"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:13:37.275" endtime="20230629 15:13:37.284"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:32.612" endtime="20230629 15:13:37.284"/>
+</test>
+<test id="s1-t5" name="Hitung faktorial Huruf" line="35">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:37.287" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:37.286" endtime="20230629 15:13:41.343"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:13:41.343" endtime="20230629 15:13:41.360"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:37.285" endtime="20230629 15:13:41.361"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>ABC</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:41.362" level="INFO">Clicking element 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:41.361" endtime="20230629 15:13:41.421"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:41.422" level="INFO">Typing text 'ABC' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:41.421" endtime="20230629 15:13:41.467"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:41.468" level="INFO">Clicking element 'id=hitung'.</msg>
+<status status="PASS" starttime="20230629 15:13:41.467" endtime="20230629 15:13:41.504"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230629 15:13:41.504" endtime="20230629 15:13:41.517"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:41.361" endtime="20230629 15:13:41.518"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:13:41.569" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:13:41.518" endtime="20230629 15:13:41.569"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:13:41.569" endtime="20230629 15:13:41.575"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:37.285" endtime="20230629 15:13:41.575"/>
+</test>
+<test id="s1-t6" name="Hitung faktorial uniq karakter" line="41">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:41.579" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:41.578" endtime="20230629 15:13:45.927"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:13:45.927" endtime="20230629 15:13:45.944"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:41.577" endtime="20230629 15:13:45.944"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>!@#</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:45.946" level="INFO">Clicking element 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:45.945" endtime="20230629 15:13:46.000"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:46.002" level="INFO">Typing text '!@#' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:46.001" endtime="20230629 15:13:46.039"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:46.040" level="INFO">Clicking element 'id=hitung'.</msg>
+<status status="PASS" starttime="20230629 15:13:46.039" endtime="20230629 15:13:46.060"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230629 15:13:46.060" endtime="20230629 15:13:46.074"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:45.945" endtime="20230629 15:13:46.074"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:13:46.122" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:13:46.074" endtime="20230629 15:13:46.123"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:13:46.123" endtime="20230629 15:13:46.131"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:41.576" endtime="20230629 15:13:46.132"/>
+</test>
+<test id="s1-t7" name="Hitung faktorial emoji" line="47">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:46.134" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:46.133" endtime="20230629 15:13:50.475"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:13:50.476" endtime="20230629 15:13:50.493"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:46.133" endtime="20230629 15:13:50.493"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>😊</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:50.496" level="INFO">Clicking element 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:50.495" endtime="20230629 15:13:50.552"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:50.553" level="INFO">Typing text '😊' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:50.552" endtime="20230629 15:13:50.655"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:50.656" level="INFO">Clicking element 'id=hitung'.</msg>
+<status status="PASS" starttime="20230629 15:13:50.655" endtime="20230629 15:13:50.685"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230629 15:13:50.686" endtime="20230629 15:13:50.698"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:50.493" endtime="20230629 15:13:50.699"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:13:50.748" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:13:50.699" endtime="20230629 15:13:50.749"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:13:50.749" endtime="20230629 15:13:50.755"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:46.132" endtime="20230629 15:13:50.756"/>
+</test>
+<test id="s1-t8" name="Hitung faktorial angka 5" line="53">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:50.758" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:50.758" endtime="20230629 15:13:55.364"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:13:55.364" endtime="20230629 15:13:55.389"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:50.757" endtime="20230629 15:13:55.389"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>5</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:55.391" level="INFO">Clicking element 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:55.390" endtime="20230629 15:13:55.443"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:55.444" level="INFO">Typing text '5' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:13:55.443" endtime="20230629 15:13:55.464"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:13:55.465" level="INFO">Clicking element 'id=hitung'.</msg>
+<status status="PASS" starttime="20230629 15:13:55.464" endtime="20230629 15:13:55.484"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230629 15:13:55.484" endtime="20230629 15:13:55.946"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:55.389" endtime="20230629 15:13:55.946"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:13:56.028" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:13:55.946" endtime="20230629 15:13:56.029"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:13:56.029" endtime="20230629 15:13:56.036"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:50.756" endtime="20230629 15:13:56.036"/>
+</test>
+<test id="s1-t9" name="Hitung faktorial angka 10" line="59">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:13:56.040" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:13:56.039" endtime="20230629 15:14:00.384"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:14:00.385" endtime="20230629 15:14:00.405"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:56.038" endtime="20230629 15:14:00.405"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>10</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:00.407" level="INFO">Clicking element 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:14:00.406" endtime="20230629 15:14:00.455"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:00.456" level="INFO">Typing text '10' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:14:00.455" endtime="20230629 15:14:00.482"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:00.483" level="INFO">Clicking element 'id=hitung'.</msg>
+<status status="PASS" starttime="20230629 15:14:00.482" endtime="20230629 15:14:00.517"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230629 15:14:00.517" endtime="20230629 15:14:00.752"/>
+</kw>
+<status status="PASS" starttime="20230629 15:14:00.406" endtime="20230629 15:14:00.752"/>
+</kw>
+<kw name="Verifikasi">
+<arg>Faktorial dari 10 adalah: 3628800</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${VERIFIKASI}</var>
+<arg>${RESULT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:00.763" level="INFO">${VERIFIKASI} = Faktorial dari 10 adalah: 3628800</msg>
+<status status="PASS" starttime="20230629 15:14:00.753" endtime="20230629 15:14:00.763"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${VERIFIKASI}</arg>
+<arg>${TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230629 15:14:00.763" endtime="20230629 15:14:00.764"/>
+</kw>
+<status status="PASS" starttime="20230629 15:14:00.752" endtime="20230629 15:14:00.764"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:14:00.842" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:14:00.764" endtime="20230629 15:14:00.842"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:14:00.842" endtime="20230629 15:14:00.852"/>
+</kw>
+<status status="PASS" starttime="20230629 15:13:56.038" endtime="20230629 15:14:00.852"/>
+</test>
+<test id="s1-t10" name="Hitung faktorial angka 20" line="66">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:14:00.855" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:14:00.854" endtime="20230629 15:14:06.934"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:14:06.935" endtime="20230629 15:14:06.956"/>
+</kw>
+<status status="PASS" starttime="20230629 15:14:00.854" endtime="20230629 15:14:06.956"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>20</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:06.958" level="INFO">Clicking element 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:14:06.957" endtime="20230629 15:14:07.000"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:07.001" level="INFO">Typing text '20' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:14:07.000" endtime="20230629 15:14:07.030"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:07.031" level="INFO">Clicking element 'id=hitung'.</msg>
+<status status="PASS" starttime="20230629 15:14:07.030" endtime="20230629 15:14:07.050"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230629 15:14:07.050" endtime="20230629 15:14:07.285"/>
+</kw>
+<status status="PASS" starttime="20230629 15:14:06.957" endtime="20230629 15:14:07.285"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 15:14:07.359" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230629 15:14:07.286" endtime="20230629 15:14:07.359"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 15:14:07.360" endtime="20230629 15:14:07.368"/>
+</kw>
+<status status="PASS" starttime="20230629 15:14:00.853" endtime="20230629 15:14:07.368"/>
+</test>
+<test id="s1-t11" name="Hitung faktorial angka 171" line="72">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:14:07.371" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<status status="PASS" starttime="20230629 15:14:07.370" endtime="20230629 15:14:11.837"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 15:14:11.838" endtime="20230629 15:14:11.855"/>
+</kw>
+<status status="PASS" starttime="20230629 15:14:07.370" endtime="20230629 15:14:11.856"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>171</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:11.858" level="INFO">Clicking element 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:14:11.857" endtime="20230629 15:14:11.919"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIELD}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:11.920" level="INFO">Typing text '171' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20230629 15:14:11.919" endtime="20230629 15:14:11.963"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 15:14:11.964" level="INFO">Clicking element 'id=hitung'.</msg>
+<status status="PASS" starttime="20230629 15:14:11.963" endtime="20230629 15:14:12.001"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230629 15:14:17.257" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230629 15:14:17.257" level="FAIL">Element 'id=result' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230629 15:14:12.002" endtime="20230629 15:14:17.259"/>
+</kw>
+<status status="FAIL" starttime="20230629 15:14:11.856" endtime="20230629 15:14:17.260"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20230629 15:14:17.260" endtime="20230629 15:14:17.260"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230629 15:14:17.261" endtime="20230629 15:14:17.261"/>
+</kw>
+<status status="FAIL" starttime="20230629 15:14:07.369" endtime="20230629 15:14:17.261">Element 'id=result' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t12" name="Hitung faktorial angka minus" line="78">
+<kw name="Keywords Open Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 15:14:17.265" level="INFO">Opening browser 'Safari' to base url 'https://qa.putraprima.id/'.</msg>
+<msg timestamp="20230629 15:14:17.884" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230629 15:14:17.885" level="FAIL">SessionNotCreatedException: Message: Could not create a session: The Safari instance is already paired with another WebDriver session.
+</msg>
+<status status="FAIL" starttime="20230629 15:14:17.264" endtime="20230629 15:14:17.887"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 15:14:17.887" endtime="20230629 15:14:17.887"/>
+</kw>
+<status status="FAIL" starttime="20230629 15:14:17.263" endtime="20230629 15:14:17.888"/>
+</kw>
+<kw name="Hitung Faktorial">
+<arg>-10</arg>
+<status status="NOT RUN" starttime="20230629 15:14:17.888" endtime="20230629 15:14:17.888"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20230629 15:14:17.888" endtime="20230629 15:14:17.888"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230629 15:14:17.888" endtime="20230629 15:14:17.888"/>
+</kw>
+<status status="FAIL" starttime="20230629 15:14:17.262" endtime="20230629 15:14:17.888">SessionNotCreatedException: Message: Could not create a session: The Safari instance is already paired with another WebDriver session.
+</status>
+</test>
+<status status="FAIL" starttime="20230629 15:13:19.189" endtime="20230629 15:14:17.889"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="2" skip="0" id="s1" name="Putraprima">Putraprima</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
