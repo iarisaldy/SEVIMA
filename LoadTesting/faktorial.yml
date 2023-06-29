@@ -1,0 +1,27 @@
+# https://artillery.io
+config:
+   # default target
+  target: "https://qa.putraprima.id/faktorial"
+  plugins:
+    expect: {}
+    metrics-by-endpoint: {}
+  phases:
+    - duration: 10
+      arrivalCount: 10
+      name: 1 RPS
+    - duration: 10
+      arrivalCount: 50
+      name: 5 RPS
+
+scenarios: 
+  - name: "TEST FAKTORIAL"
+    flow:
+      - post: 
+          url: "https://qa.putraprima.id/faktorial"
+          json:
+            number: "10"
+          headers:
+            Content-Type: application/json
+          expect:
+            - statusCode: 200
+            - contentType: json
