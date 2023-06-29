@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.8 on darwin)" generated="20230629 12:39:40.349" rpa="false" schemaversion="3">
+<suite id="s1" name="Faktorial" source="/Users/irfanarisaldy/Documents/Github/SEVIMA/SEVIMA/APIAutomationTest/faktorial.robot">
+<test id="s1-t1" name="POST faktorial success" line="13">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230629 12:39:40.392" level="INFO">Creating Session using : alias=putraprima, url=https://qa.putraprima.id/faktorial, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230629 12:39:40.391" endtime="20230629 12:39:40.392"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230629 12:39:40.392" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20230629 12:39:40.392" endtime="20230629 12:39:40.392"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${resp}</var>
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<arg>data={"number": "1"}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20230629 12:39:43.155" level="INFO">POST Request : url=https://qa.putraprima.id/faktorial 
+ path_url=/faktorial 
+ headers={'User-Agent': 'python-requests/2.20.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '15'} 
+ body={"number": "1"} 
+ </msg>
+<msg timestamp="20230629 12:39:43.156" level="INFO">POST Response : url=https://qa.putraprima.id/faktorial 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.14.0 (Ubuntu)', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, private', 'Date': 'Thu, 29 Jun 2023 05:39:42 GMT', 'Set-Cookie': 'XSRF-TOKEN=eyJpdiI6IkF1L3ZoQ3BrVFVGMjFsTEpwS2NmMHc9PSIsInZhbHVlIjoiWlB3WGVmU2pmenVkVjEwd3JabjdsSWtGN0VQRmpYWmVTZEhqM0doTG5QUDRSRGlpZXBpSWxyTkdNbXExNWxEWDQ4T0tQUENqRWppMFBVKzlmWFdUNlMvNDdpY0JEUmFjUVVhS05md29iV0VBTjhvVWdQZjZBUXUzd2h0eTcvT0QiLCJtYWMiOiIxMTEyZWQ5M2FiYzRlZDdiNGU4N2U2ZTJkM2QwZjczMWZkODc3ZmYzYzg1N2JkOGFlNDg0MGFiYWExZDlkNTM0IiwidGFnIjoiIn0%3D; expires=Thu, 29-Jun-2023 07:39:42 GMT; Max-Age=7200; path=/; samesite=lax, laravel_session=eyJpdiI6IlRQUkJNeGpKZG1BSjV1bE1NTmdRTnc9PSIsInZhbHVlIjoib05iUVN5WmovenlxUjJxdllmVkxhVGZkSzdFS0h3MndPRE1CSHdkajcxbmowRWt5R3pUQjNsc21iSlV2ZTU0TllZWjlCV01JTGYwTnJtVmJyNm5Hdng1bTNYVHcyMG9vbDJ4YXBRSmdNOUVsaHJUZWpEY3NTa21jdDV6aXJNOGsiLCJtYWMiOiJkYTIxNjhiMDVjNzdjNTg3MTFiMWU0NDI4ZDYwYWQxMzZmMWM3ZTg2MzY3NGI5N2ZkMGUzYjk1ZWIwYmJkYWEzIiwidGFnIjoiIn0%3D; expires=Thu, 29-Jun-2023 07:39:42 GMT; Max-Age=7200; path=/; httponly; samesite=lax', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff'} 
+ body={"result":1} 
+ </msg>
+<msg timestamp="20230629 12:39:43.157" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230629 12:39:40.392" endtime="20230629 12:39:43.157"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${resp.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 12:39:43.158" endtime="20230629 12:39:43.160"/>
+</kw>
+<doc>Hitung Faktorial</doc>
+<status status="PASS" starttime="20230629 12:39:40.391" endtime="20230629 12:39:43.161"/>
+</test>
+<test id="s1-t2" name="POST faktorial success number 10" line="21">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230629 12:39:43.162" level="INFO">Creating Session using : alias=putraprima, url=https://qa.putraprima.id/faktorial, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230629 12:39:43.162" endtime="20230629 12:39:43.163"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230629 12:39:43.164" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20230629 12:39:43.163" endtime="20230629 12:39:43.164"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${resp}</var>
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<arg>data={"number": "10"}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20230629 12:39:47.496" level="INFO">POST Request : url=https://qa.putraprima.id/faktorial 
+ path_url=/faktorial 
+ headers={'User-Agent': 'python-requests/2.20.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '16'} 
+ body={"number": "10"} 
+ </msg>
+<msg timestamp="20230629 12:39:47.497" level="INFO">POST Response : url=https://qa.putraprima.id/faktorial 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.14.0 (Ubuntu)', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, private', 'Date': 'Thu, 29 Jun 2023 05:39:47 GMT', 'Set-Cookie': 'XSRF-TOKEN=eyJpdiI6IjRHM1ZBQXZEaktKcFNDU3l2V3RYT2c9PSIsInZhbHVlIjoiT1NJRFhHYW0yYUl1dGROanVuN005STBaalBvVGVDWHUxRWswdWhIR2IvTFB1ZytMZlJ6YnBZaW1qbThuQndGUXpuQlhEMzdxZGtzdWF1dkpid3RvN0RsQU9ZZ0FKZmNuUS96YVNjSzRwNkNobnJ4OTNlbWZqN0IyczFuYng2QVkiLCJtYWMiOiJmMmI2NjUzOTA4MzMzNmM0ZDJkZjBmZDczZDRmZDlhOTBkNjMwMGY3OTBlZjAxMjg4ZTIwNDYyZTg1ZDlmNWQ5IiwidGFnIjoiIn0%3D; expires=Thu, 29-Jun-2023 07:39:47 GMT; Max-Age=7200; path=/; samesite=lax, laravel_session=eyJpdiI6ImdBNnFEaWY5S1BwMENpdGpIWWROTHc9PSIsInZhbHVlIjoieHkra1lVQXkxbkQyejdxdDMvMjFtcTZvQ2Zla1h2NmgzK0lTWk1PM3R4YVZkM3B3cExVbGlLQ3lrTEJpTlZGRkdJNnpBMUVVVHJGYU1sVzkvekJ0cUtVSjhSeTNtbHMvb0tKNSsrZEw1aDVvSVRwQ21ZaDNtMkY2OTlvSTBMaHIiLCJtYWMiOiIwNDI4ZjAxY2QyZWQzMmJjMjc0YjVkNDdlMzA1MjcxZTY5NzVkYzhjYTQ3MWNjZGQ5ZjU2MGMxYzEwMjExNmQ5IiwidGFnIjoiIn0%3D; expires=Thu, 29-Jun-2023 07:39:47 GMT; Max-Age=7200; path=/; httponly; samesite=lax', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff'} 
+ body={"result":3628800} 
+ </msg>
+<msg timestamp="20230629 12:39:47.497" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230629 12:39:43.164" endtime="20230629 12:39:47.497"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${resp.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 12:39:47.498" endtime="20230629 12:39:47.500"/>
+</kw>
+<doc>Hitung Faktorial</doc>
+<status status="PASS" starttime="20230629 12:39:43.161" endtime="20230629 12:39:47.500"/>
+</test>
+<test id="s1-t3" name="POST faktorial success number 20" line="29">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230629 12:39:47.501" level="INFO">Creating Session using : alias=putraprima, url=https://qa.putraprima.id/faktorial, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230629 12:39:47.501" endtime="20230629 12:39:47.502"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230629 12:39:47.502" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20230629 12:39:47.502" endtime="20230629 12:39:47.503"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${resp}</var>
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<arg>data={"number": "20"}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20230629 12:39:49.759" level="INFO">POST Request : url=https://qa.putraprima.id/faktorial 
+ path_url=/faktorial 
+ headers={'User-Agent': 'python-requests/2.20.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '16'} 
+ body={"number": "20"} 
+ </msg>
+<msg timestamp="20230629 12:39:49.760" level="INFO">POST Response : url=https://qa.putraprima.id/faktorial 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.14.0 (Ubuntu)', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, private', 'Date': 'Thu, 29 Jun 2023 05:39:49 GMT', 'Set-Cookie': 'XSRF-TOKEN=eyJpdiI6IlhBa1JjaGhDY2pkOTVubUhEU2U2N0E9PSIsInZhbHVlIjoialJ1bHZnNUZVNWVaWHRjV0pSUWpjZXN2QjdYVVhncnc4RzlrOEFQWUdJMmpvcGg5Z3Z2K2M5bTVDSlhjamU3M0JsdnlZVTNoVFhPdzgxL3A4WVVpVFZ4NW84bHV2Y2NBSFR4UXMrbUF1WUo3MWpoUU8rL3BYL29rcDJuK0IwNTUiLCJtYWMiOiIwNWQwOWY1MjgzYzQzNzMwZjQ3ZmVkNzIzZjQ1ZmMwMzZlZDU5NzhkMDFmYWNiNDlmZmY0OTk1OGUyNTNiNTM0IiwidGFnIjoiIn0%3D; expires=Thu, 29-Jun-2023 07:39:49 GMT; Max-Age=7200; path=/; samesite=lax, laravel_session=eyJpdiI6Ii93T3JmeWJjbnVRSU9NVGZ0QnBHTkE9PSIsInZhbHVlIjoiR2FvaHdJcWZ0NFQxOTFjWityZ0dVZW1HV05WY3l5cnhVS0IrYWRYTE1WTmpkY2xaTllseXBrL3NoKzB0dEJOWFdCL2EzRTBTU1pNajI1bU9NTjhSSnRyODJmMkFlNDFaZEtiZnJ0THRZU3NiNWVieG9Xd0lMUnA4V2NGWlQ4ZjAiLCJtYWMiOiJhN2QxMmMxMzA1ZjkwMjdlM2U2YTJhNzIyODNmZGYxZGViZmE5ODZkMmZjOWI2ZDg5YmNjOTNiNjZlZmY5MzhhIiwidGFnIjoiIn0%3D; expires=Thu, 29-Jun-2023 07:39:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff'} 
+ body={"result":2432902008176640000} 
+ </msg>
+<msg timestamp="20230629 12:39:49.760" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230629 12:39:47.503" endtime="20230629 12:39:49.760"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${resp.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 12:39:49.761" endtime="20230629 12:39:49.763"/>
+</kw>
+<doc>Hitung Faktorial</doc>
+<status status="PASS" starttime="20230629 12:39:47.500" endtime="20230629 12:39:49.763"/>
+</test>
+<test id="s1-t4" name="POST faktorial success &gt;170" line="37">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230629 12:39:49.765" level="INFO">Creating Session using : alias=putraprima, url=https://qa.putraprima.id/faktorial, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230629 12:39:49.765" endtime="20230629 12:39:49.765"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230629 12:39:49.766" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20230629 12:39:49.766" endtime="20230629 12:39:49.766"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${resp}</var>
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<arg>data={"number": "171"}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20230629 12:39:54.053" level="INFO">POST Request : url=https://qa.putraprima.id/faktorial 
+ path_url=/faktorial 
+ headers={'User-Agent': 'python-requests/2.20.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '17'} 
+ body={"number": "171"} 
+ </msg>
+<msg timestamp="20230629 12:39:54.055" level="INFO">POST Response : url=https://qa.putraprima.id/faktorial 
+ status=500, reason=Internal Server Error 
+ headers={'Server': 'nginx/1.14.0 (Ubuntu)', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, private', 'date': 'Thu, 29 Jun 2023 05:39:50 GMT'} 
+ body=&lt;!doctype html&gt;
+&lt;html class="theme-light"&gt;
+&lt;!--
+UnexpectedValueException: The stream or file &amp;quot;/var/www/qa.putraprima.id/storage/logs/laravel.log&amp;quot; could not be opened in append mode: Failed to open stream: Permission denied in file /var/www/qa.putraprima.id/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 146
+
+#0 /var/www/qa.putraprima.id/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(48): Monolog\Handler\StreamHandler-&amp;gt;write()
+#1 /var/www/qa.putraprima.id/vendor/monolog/monolog/src/Monolog/Logger.php(327): Monolog\Handler\AbstractProcessingHandler-&amp;gt;handle()
+#2 /var/www/qa.putraprima.id/vendor/monolog/monolog/src/Monolog/Logger.php(565): Monolog\Logger-&amp;gt;addRecord()
+#3 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Log/Logger.php(183): Monolog\Logger-&amp;gt;error()
+#4 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Log/Logger.php(94): Illuminate\Log\Logger-&amp;gt;writeLog()
+#5 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\Logger-&amp;gt;error()
+#6 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\Log\LogManager-&amp;gt;error()
+#7 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(136): Illuminate\Foundation\Exceptions\Handler-&amp;gt;report()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions-&amp;gt;handleException()
+#9 {main}
+--&gt;
+&lt;head&gt;
+    &lt;!-- Hide dumps asap --&gt;
+    &lt;style&gt;
+        pre.sf-dump {
+            display: none !important;
+        }
+    &lt;/style&gt;
+
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;meta name="robots" content="noindex, nofollow"&gt;
+
+    &lt;title&gt;🧨 The stream or file &amp;quot;/var/www/qa.putraprima.id/storage/logs/laravel.log&amp;quot; could not be opened in append mode: Failed to open stream: Permission denied&lt;/title&gt;
+
+    
+&lt;/head&gt;
+&lt;body class="scrollbar-lg"&gt;
+
+&lt;script&gt;
+    window.data = {"report":{"notifier":"Laravel Client","language":"PHP","framework_version":"8.72.0","language_version":"8.0.10","exception_class":"UnexpectedValueException","seen_at":1688017190,"message":"The stream or file \u0022\/var\/www\/qa.putraprima.id\/storage\/logs\/laravel.log\u0022 could not be opened in append mode: Failed to open stream: Permission denied","glows":[],"solutions":[],"stacktrace":[{"line_number":146,"method":"write","class":"Monolog\\Handler\\StreamHandler","code_snippet":{"131":"            $url = $this-\u003Eurl;","132":"            if (null === $url || \u0027\u0027 === $url) {","133":"                throw new \\LogicException(\u0027Missing stream url, the stream can not be opened. This may be caused by a premature call to close().\u0027);","134":"            }","135":"            $this-\u003EcreateDir($url);","136":"            $this-\u003EerrorMessage = null;","137":"            set_error_handler([$this, \u0027customErrorHandler\u0027]);","138":"            $stream = fopen($url, \u0027a\u0027);","139":"            if ($this-\u003EfilePermission !== null) {","140":"                @chmod($url, $this-\u003EfilePermission);","141":"            }","142":"            restore_error_handler();","143":"            if (!is_resource($stream)) {","144":"                $this-\u003Estream = null;","145":"","146":"                throw new \\UnexpectedValueException(sprintf(\u0027The stream or file \u0022%s\u0022 could not be opened in append mode: \u0027.$this-\u003EerrorMessage, $url));","147":"            }","148":"            stream_set_chunk_size($stream, $this-\u003EstreamChunkSize);","149":"            $this-\u003Estream = $stream;","150":"        }","151":"","152":"        $stream = $this-\u003Estream;","153":"        if (!is_resource($stream)) {","154":"            throw new \\LogicException(\u0027No stream was opened yet\u0027);","155":"        }","156":"","157":"        if ($this-\u003EuseLocking) {","158":"            \/\/ ignoring errors here, there\u0027s not much we can do about them","159":"            flock($stream, LOCK_EX);","160":"        }","161":""},"file":"\/var\/www\/qa.putraprima.id\/vendor\/monolog\/monolog\/src\/Monolog\/Handler\/StreamHandler.php","is_application_frame":false},{"line_number":48,"method":"handle","class":"Monolog\\Handler\\AbstractProcessingHandler","code_snippet":{"33":"     * {@inheritDoc}","34":"     *\/","35":"    public function handle(array $record): bool","36":"    {","37":"        if (!$this-\u003EisHandling($record)) {","38":"            return false;","39":"        }","40":"","41":"        if ($this-\u003Eprocessors) {","42":"            \/** @var Record $record *\/","43":"            $record = $this-\u003EprocessRecord($record);","44":"        }","45":"","46":"        $record[\u0027formatted\u0027] = $this-\u003EgetFormatter()-\u003Eformat($record);","47":"","48":"        $this-\u003Ewrite($record);","49":"","50":"        return false === $this-\u003Ebubble;","51":"    }","52":"","53":"    \/**","54":"     * Writes the record down to the log of the implementing handler","55":"     *","56":"     * @phpstan-param FormattedRecord $record","57":"     *\/","58":"    abstract protected function write(array $record): void;","59":"","60":"    \/**","61":"     * @return void","62":"     *\/","63":"    public function reset()"},"file":"\/var\/www\/qa.putraprima.id\/vendor\/monolog\/monolog\/src\/Monolog\/Handler\/AbstractProcessingHandler.php","is_application_frame":false},{"line_number":327,"method":"addRecord","class":"Monolog\\Logger","code_snippet":{"312":"                ];","313":"","314":"                try {","315":"                    foreach ($this-\u003Eprocessors as $processor) {","316":"                        $record = $processor($record);","317":"                    }","318":"                } catch (Throwable $e) {","319":"                    $this-\u003EhandleException($e, $record);","320":"","321":"                    return true;","322":"                }","323":"            }","324":"","325":"            \/\/ once the record exists, send it to all handlers as long as the bubbling chain is not interrupted","326":"            try {","327":"                if (true === $handler-\u003Ehandle($record)) {","328":"                    break;","329":"                }","330":"            } catch (Throwable $e) {","331":"                $this-\u003EhandleException($e, $record);","332":"","333":"                return true;","334":"            }","335":"        }","336":"","337":"        return null !== $record;","338":"    }","339":"","340":"    \/**","341":"     * Ends a log cycle and frees all resources used by handlers.","342":"     *"},"file":"\/var\/www\/qa.putraprima.id\/vendor\/monolog\/monolog\/src\/Monolog\/Logger.php","is_application_frame":false},{"line_number":565,"method":"error","class":"Monolog\\Logger","code_snippet":{"550":"    public function warning($message, array $context = []): void","551":"    {","552":"        $this-\u003EaddRecord(static::WARNING, (string) $message, $context);","553":"    }","554":"","555":"    \/**","556":"     * Adds a log record at the ERROR level.","557":"     *","558":"     * This method allows for compatibility with common interfaces.","559":"     *","560":"     * @param string|Stringable $message The log message","561":"     * @param mixed[]           $context The log context","562":"     *\/","563":"    public function error($message, array $context = []): void","564":"    {","565":"        $this-\u003EaddRecord(static::ERROR, (string) $message, $context);","566":"    }","567":"","568":"    \/**","569":"     * Adds a log record at the CRITICAL level.","570":"     *","571":"     * This method allows for compatibility with common interfaces.","572":"     *","573":"     * @param string|Stringable $message The log message","574":"     * @param mixed[]           $context The log context","575":"     *\/","576":"    public function critical($message, array $context = []): void","577":"    {","578":"        $this-\u003EaddRecord(static::CRITICAL, (string) $message, $context);","579":"    }","580":""},"file":"\/var\/www\/qa.putraprima.id\/vendor\/monolog\/monolog\/src\/Monolog\/Logger.php","is_application_frame":false},{"line_number":183,"method":"writeLog","class":"Illuminate\\Log\\Logger","code_snippet":{"168":"        $this-\u003EwriteLog($level, $message, $context);","169":"    }","170":"","171":"    \/**","172":"     * Write a message to the log.","173":"     *","174":"     * @param  string  $level","175":"     * @param  string  $message","176":"     * @param  array  $context","177":"     * @return void","178":"     *\/","179":"    protected function writeLog($level, $message, $context)","180":"    {","181":"        $this-\u003Elogger-\u003E{$level}(","182":"            $message = $this-\u003EformatMessage($message),","183":"            $context = array_merge($this-\u003Econtext, $context)","184":"        );","185":"","186":"        $this-\u003EfireLogEvent($level, $message, $context);","187":"    }","188":"","189":"    \/**","190":"     * Add context to all future logs.","191":"     *","192":"     * @param  array  $context","193":"     * @return $this","194":"     *\/","195":"    public function withContext(array $context = [])","196":"    {","197":"        $this-\u003Econtext = array_merge($this-\u003Econtext, $context);","198":""},"file":"\/var\/www\/qa.putraprima.id\/vendor\/laravel\/framework\/src\/Illuminate\/Log\/Logger.php","is_application_frame":false},{"line_number":94,"method":"error","class":"Illuminate\\Log\\Logger","code_snippet":{"79":"     *\/","80":"    public function critical($message, array $context = [])","81":"    {","82":"        $this-\u003EwriteLog(__FUNCTION__, $message, $context);","83":"    }","84":"","85":"    \/**","86":"     * Log an error message to the logs.","87":"     *... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20230629 12:39:54.057" level="FAIL">Url: https://qa.putraprima.id/faktorial Expected status: 500 != 200</msg>
+<status status="FAIL" starttime="20230629 12:39:49.766" endtime="20230629 12:39:54.059"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${resp.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230629 12:39:54.059" endtime="20230629 12:39:54.060"/>
+</kw>
+<doc>Hitung Faktorial</doc>
+<status status="FAIL" starttime="20230629 12:39:49.764" endtime="20230629 12:39:54.060">Url: https://qa.putraprima.id/faktorial Expected status: 500 != 200</status>
+</test>
+<test id="s1-t5" name="POST faktorial fail Method Not Allowed" line="45">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230629 12:39:54.063" level="INFO">Creating Session using : alias=putraprima, url=https://qa.putraprima.id/faktorial, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230629 12:39:54.061" endtime="20230629 12:39:54.064"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230629 12:39:54.064" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20230629 12:39:54.064" endtime="20230629 12:39:54.064"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${resp}</var>
+<arg>putraprima</arg>
+<arg>${url}</arg>
+<arg>data={"number": "1"}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=405</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20230629 12:39:57.355" level="INFO">GET Request : url=https://qa.putraprima.id/faktorial 
+ path_url=/faktorial 
+ headers={'User-Agent': 'python-requests/2.20.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '15'} 
+ body={"number": "1"} 
+ </msg>
+<msg timestamp="20230629 12:39:57.358" level="INFO">GET Response : url=https://qa.putraprima.id/faktorial 
+ status=405, reason=Method Not Allowed 
+ headers={'Server': 'nginx/1.14.0 (Ubuntu)', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'allow': 'POST', 'Cache-Control': 'no-cache, private', 'date': 'Thu, 29 Jun 2023 05:39:55 GMT'} 
+ body=&lt;!doctype html&gt;
+&lt;html class="theme-light"&gt;
+&lt;!--
+Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException: The GET method is not supported for this route. Supported methods: POST. in file /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php on line 117
+
+#0 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php(103): Illuminate\Routing\AbstractRouteCollection-&amp;gt;methodNotAllowed()
+#1 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php(40): Illuminate\Routing\AbstractRouteCollection-&amp;gt;getRouteForMethods()
+#2 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php(162): Illuminate\Routing\AbstractRouteCollection-&amp;gt;handleMatchedRoute()
+#3 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Routing/Router.php(647): Illuminate\Routing\RouteCollection-&amp;gt;match()
+#4 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\Routing\Router-&amp;gt;findRoute()
+#5 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\Routing\Router-&amp;gt;dispatchToRoute()
+#6 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\Routing\Router-&amp;gt;dispatch()
+#7 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\Foundation\Http\Kernel-&amp;gt;Illuminate\Foundation\Http\{closure}()
+#8 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&amp;gt;Illuminate\Pipeline\{closure}()
+#9 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest-&amp;gt;handle()
+#10 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&amp;gt;handle()
+#11 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&amp;gt;Illuminate\Pipeline\{closure}()
+#12 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\Foundation\Http\Middleware\TransformsRequest-&amp;gt;handle()
+#13 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\TrimStrings-&amp;gt;handle()
+#14 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline-&amp;gt;Illuminate\Pipeline\{closure}()
+#15 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\ValidatePostSize-&amp;gt;handle()
+#16 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\Pipeline\Pipeline-&amp;gt;Illuminate\Pipeline\{closure}()
+#17 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&amp;gt;handle()
+#18 /var/www/qa.putraprima.id/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\Pipeline\Pipeline-&amp;gt;Illuminate\Pipeline\{closure}()
+#19 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\Cors\HandleCors-&amp;gt;handle()
+#20 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\Pipeline\Pipeline-&amp;gt;Illuminate\Pipeline\{closure}()
+#21 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Http\Middleware\TrustProxies-&amp;gt;handle()
+#22 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\Pipeline\Pipeline-&amp;gt;Illuminate\Pipeline\{closure}()
+#23 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\Pipeline\Pipeline-&amp;gt;then()
+#24 /var/www/qa.putraprima.id/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\Foundation\Http\Kernel-&amp;gt;sendRequestThroughRouter()
+#25 /var/www/qa.putraprima.id/public/index.php(52): Illuminate\Foundation\Http\Kernel-&amp;gt;handle()
+#26 {main}
+--&gt;
+&lt;head&gt;
+    &lt;!-- Hide dumps asap --&gt;
+    &lt;style&gt;
+        pre.sf-dump {
+            display: none !important;
+        }
+    &lt;/style&gt;
+
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;meta name="robots" content="noindex, nofollow"&gt;
+
+    &lt;title&gt;🧨 The GET method is not supported for this route. Supported methods: POST.&lt;/title&gt;
+
+    
+&lt;/head&gt;
+&lt;body class="scrollbar-lg"&gt;
+
+&lt;script&gt;
+    window.data = {"report":{"notifier":"Laravel Client","language":"PHP","framework_version":"8.72.0","language_version":"8.0.10","exception_class":"Symfony\\Component\\HttpKernel\\Exception\\MethodNotAllowedHttpException","seen_at":1688017195,"message":"The GET method is not supported for this route. Supported methods: POST.","glows":[],"solutions":[],"stacktrace":[{"line_number":117,"method":"methodNotAllowed","class":"Illuminate\\Routing\\AbstractRouteCollection","code_snippet":{"102":"","103":"        $this-\u003EmethodNotAllowed($methods, $request-\u003Emethod());","104":"    }","105":"","106":"    \/**","107":"     * Throw a method not allowed HTTP exception.","108":"     *","109":"     * @param  array  $others","110":"     * @param  string  $method","111":"     * @return void","112":"     *","113":"     * @throws \\Symfony\\Component\\HttpKernel\\Exception\\MethodNotAllowedHttpException","114":"     *\/","115":"    protected function methodNotAllowed(array $others, $method)","116":"    {","117":"        throw new MethodNotAllowedHttpException(","118":"            $others,","119":"            sprintf(","120":"                \u0027The %s method is not supported for this route. Supported methods: %s.\u0027,","121":"                $method,","122":"                implode(\u0027, \u0027, $others)","123":"            )","124":"        );","125":"    }","126":"","127":"    \/**","128":"     * Compile the routes for caching.","129":"     *","130":"     * @return array","131":"     *\/","132":"    public function compile()"},"file":"\/var\/www\/qa.putraprima.id\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/AbstractRouteCollection.php","is_application_frame":false},{"line_number":103,"method":"getRouteForMethods","class":"Illuminate\\Routing\\AbstractRouteCollection","code_snippet":{"88":"     *","89":"     * @param  \\Illuminate\\Http\\Request  $request","90":"     * @param  string[]  $methods","91":"     * @return \\Illuminate\\Routing\\Route","92":"     *","93":"     * @throws \\Symfony\\Component\\HttpKernel\\Exception\\MethodNotAllowedHttpException","94":"     *\/","95":"    protected function getRouteForMethods($request, array $methods)","96":"    {","97":"        if ($request-\u003Emethod() === \u0027OPTIONS\u0027) {","98":"            return (new Route(\u0027OPTIONS\u0027, $request-\u003Epath(), function () use ($methods) {","99":"                return new Response(\u0027\u0027, 200, [\u0027Allow\u0027 =\u003E implode(\u0027,\u0027, $methods)]);","100":"            }))-\u003Ebind($request);","101":"        }","102":"","103":"        $this-\u003EmethodNotAllowed($methods, $request-\u003Emethod());","104":"    }","105":"","106":"    \/**","107":"     * Throw a method not allowed HTTP exception.","108":"     *","109":"     * @param  array  $others","110":"     * @param  string  $method","111":"     * @return void","112":"     *","113":"     * @throws \\Symfony\\Component\\HttpKernel\\Exception\\MethodNotAllowedHttpException","114":"     *\/","115":"    protected function methodNotAllowed(array $others, $method)","116":"    {","117":"        throw new MethodNotAllowedHttpException(","118":"            $others,"},"file":"\/var\/www\/qa.putraprima.id\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/AbstractRouteCollection.php","is_application_frame":false},{"line_number":40,"method":"handleMatchedRoute","class":"Illuminate\\Routing\\AbstractRouteCollection","code_snippet":{"25":"     *","26":"     * @throws \\Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException","27":"     *\/","28":"    protected function handleMatchedRoute(Request $request, $route)","29":"    {","30":"        if (! is_null($route)) {","31":"            return $route-\u003Ebind($request);","32":"        }","33":"","34":"        \/\/ If no route was found we will now check if a matching route is specified by","35":"        \/\/ another HTTP verb. If it is we will need to throw a MethodNotAllowed and","36":"        \/\/ inform the user agent of which HTTP verb it should use for this route.","37":"        $others = $this-\u003EcheckForAlternateVerbs($request);","38":"","39":"        if (count($others) \u003E 0) {","40":"            return $this-\u003EgetRouteForMethods($request, $others);","41":"        }","42":"","43":"        throw new NotFoundHttpException;","44":"    }","45":"","46":"    \/**","47":"     * Determine if any routes match on another HTTP verb.","48":"     *","49":"     * @param  \\Illuminate\\Http\\Request  $request","50":"     * @return array","51":"     *\/","52":"    protected function checkForAlternateVerbs($request)","53":"    {","54":"        $methods = array_diff(Router::$verbs, [$request-\u003EgetMethod()]);","55":""},"file":"\/var\/www\/qa.putraprima.id\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/AbstractRouteCollection.php","is_application_frame":false},{"line_... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20230629 12:39:57.359" level="INFO">${resp} = &lt;Response [405]&gt;</msg>
+<status status="PASS" starttime="20230629 12:39:54.064" endtime="20230629 12:39:57.359"/>
+</kw>
+<doc>Hitung Faktorial gagal</doc>
+<status status="PASS" starttime="20230629 12:39:54.060" endtime="20230629 12:39:57.360"/>
+</test>
+<doc>Endpoint hitung faktorial pada website https://qa.putraprima.id/</doc>
+<status status="FAIL" starttime="20230629 12:39:40.350" endtime="20230629 12:39:57.361"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" skip="0" id="s1" name="Faktorial">Faktorial</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
